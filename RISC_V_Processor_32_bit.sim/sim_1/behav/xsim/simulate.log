@@ -1,4 +1,0 @@
-Vivado Simulator 2018.3
-Time resolution is 1 ps
-WARNING: File ../../source/imem.dat referenced on D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/sources_1/new/imem.v at line 12 cannot be opened for reading. Please ensure that this file is available in the current working directory.
-$finish called at time : 424 ns : File "D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/sim_1/new/top_tb.v" Line 20
