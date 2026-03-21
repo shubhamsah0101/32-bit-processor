@@ -37,7 +37,7 @@ module tb_top;
             $time,
             uut.pc,
             uut.inst,
-            uut.RV32I_Logic.alu_result,   // adjust if name differs
+            uut.RV32I_Logic.ALUResults,   // adjust if name differs
             uut.dmemAdrs,
             uut.dmemDataStore,
             uut.dmemDataRead
