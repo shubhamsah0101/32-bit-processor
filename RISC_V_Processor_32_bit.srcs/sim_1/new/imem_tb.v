@@ -35,5 +35,9 @@ module imem_tb();
 		$dumpfile("imem_tb.vcd");
 		$dumpvars(0, imem_tb);
 	end
+	
+	initial begin
+        $readmemh("program.mem", mem);
+    end
 
 endmodule
