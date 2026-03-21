@@ -9,15 +9,14 @@
     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 
 source Top1.tcl -notrace
-create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 319.254 ; gain = 68.328
 Command: synth_design -top Top1 -part xc7a35tcpg236-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 5640 
+INFO: Helper process launched with PID 18316 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 430.516 ; gain = 98.238
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 431.031 ; gain = 99.551
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'Top1' [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/sources_1/new/Top1.v:3]
 INFO: [Synth 8-6157] synthesizing module 'Single_Cycle_RV32I' [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/sources_1/new/Single_Cycle_RV32I.v:3]
@@ -55,77 +54,7 @@ INFO: [Synth 8-6155] done synthesizing module 'Single_Cycle_RV32I' (10#1) [D:/RT
 INFO: [Synth 8-6157] synthesizing module 'dmem' [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/sources_1/new/dmem.v:3]
 INFO: [Synth 8-6155] done synthesizing module 'dmem' (11#1) [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/sources_1/new/dmem.v:3]
 INFO: [Synth 8-6157] synthesizing module 'imem' [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/sources_1/new/imem.v:3]
-	Parameter INITIAL_DATA_PATH bound to: ../../source/imem.dat - type: string 
-CRITICAL WARNING: [Synth 8-4445] could not open $readmem data file '../../source/imem.dat'; please make sure the file is added to project and has read permission, ignoring [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/sources_1/new/imem.v:12]
-
-Warning: Trying to implement RAM in registers. Block RAM or DRAM implementation is not possible for one or more of the following reasons :
-	1: Unable to determine number of words or word size in RAM. 
-	2: No valid read/write found for RAM. 
-RAM dissolved into registers
-WARNING: [Synth 8-3848] Net mem in module/entity imem does not have driver. [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/sources_1/new/imem.v:7]
-WARNING: [Synth 8-3848] Net mem in module/entity imem does not have driver. [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/sources_1/new/imem.v:7]
-WARNING: [Synth 8-3848] Net mem in module/entity imem does not have driver. [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/sources_1/new/imem.v:7]
-WARNING: [Synth 8-3848] Net mem in module/entity imem does not have driver. [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/sources_1/new/imem.v:7]
-WARNING: [Synth 8-3848] Net mem in module/entity imem does not have driver. [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/sources_1/new/imem.v:7]
-WARNING: [Synth 8-3848] Net mem in module/entity imem does not have driver. [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/sources_1/new/imem.v:7]
-WARNING: [Synth 8-3848] Net mem in module/entity imem does not have driver. [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/sources_1/new/imem.v:7]
-WARNING: [Synth 8-3848] Net mem in module/entity imem does not have driver. [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/sources_1/new/imem.v:7]
-WARNING: [Synth 8-3848] Net mem in module/entity imem does not have driver. [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/sources_1/new/imem.v:7]
-WARNING: [Synth 8-3848] Net mem in module/entity imem does not have driver. [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/sources_1/new/imem.v:7]
-WARNING: [Synth 8-3848] Net mem in module/entity imem does not have driver. [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/sources_1/new/imem.v:7]
-WARNING: [Synth 8-3848] Net mem in module/entity imem does not have driver. [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/sources_1/new/imem.v:7]
-WARNING: [Synth 8-3848] Net mem in module/entity imem does not have driver. [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/sources_1/new/imem.v:7]
-WARNING: [Synth 8-3848] Net mem in module/entity imem does not have driver. [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/sources_1/new/imem.v:7]
-WARNING: [Synth 8-3848] Net mem in module/entity imem does not have driver. [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/sources_1/new/imem.v:7]
-WARNING: [Synth 8-3848] Net mem in module/entity imem does not have driver. [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/sources_1/new/imem.v:7]
-WARNING: [Synth 8-3848] Net mem in module/entity imem does not have driver. [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/sources_1/new/imem.v:7]
-WARNING: [Synth 8-3848] Net mem in module/entity imem does not have driver. [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/sources_1/new/imem.v:7]
-WARNING: [Synth 8-3848] Net mem in module/entity imem does not have driver. [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/sources_1/new/imem.v:7]
-WARNING: [Synth 8-3848] Net mem in module/entity imem does not have driver. [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/sources_1/new/imem.v:7]
-WARNING: [Synth 8-3848] Net mem in module/entity imem does not have driver. [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/sources_1/new/imem.v:7]
-WARNING: [Synth 8-3848] Net mem in module/entity imem does not have driver. [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/sources_1/new/imem.v:7]
-WARNING: [Synth 8-3848] Net mem in module/entity imem does not have driver. [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/sources_1/new/imem.v:7]
-WARNING: [Synth 8-3848] Net mem in module/entity imem does not have driver. [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/sources_1/new/imem.v:7]
-WARNING: [Synth 8-3848] Net mem in module/entity imem does not have driver. [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/sources_1/new/imem.v:7]
-WARNING: [Synth 8-3848] Net mem in module/entity imem does not have driver. [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/sources_1/new/imem.v:7]
-WARNING: [Synth 8-3848] Net mem in module/entity imem does not have driver. [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/sources_1/new/imem.v:7]
-WARNING: [Synth 8-3848] Net mem in module/entity imem does not have driver. [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/sources_1/new/imem.v:7]
-WARNING: [Synth 8-3848] Net mem in module/entity imem does not have driver. [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/sources_1/new/imem.v:7]
-WARNING: [Synth 8-3848] Net mem in module/entity imem does not have driver. [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/sources_1/new/imem.v:7]
-WARNING: [Synth 8-3848] Net mem in module/entity imem does not have driver. [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/sources_1/new/imem.v:7]
-WARNING: [Synth 8-3848] Net mem in module/entity imem does not have driver. [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/sources_1/new/imem.v:7]
-WARNING: [Synth 8-3848] Net mem in module/entity imem does not have driver. [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/sources_1/new/imem.v:7]
-WARNING: [Synth 8-3848] Net mem in module/entity imem does not have driver. [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/sources_1/new/imem.v:7]
-WARNING: [Synth 8-3848] Net mem in module/entity imem does not have driver. [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/sources_1/new/imem.v:7]
-WARNING: [Synth 8-3848] Net mem in module/entity imem does not have driver. [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/sources_1/new/imem.v:7]
-WARNING: [Synth 8-3848] Net mem in module/entity imem does not have driver. [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/sources_1/new/imem.v:7]
-WARNING: [Synth 8-3848] Net mem in module/entity imem does not have driver. [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/sources_1/new/imem.v:7]
-WARNING: [Synth 8-3848] Net mem in module/entity imem does not have driver. [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/sources_1/new/imem.v:7]
-WARNING: [Synth 8-3848] Net mem in module/entity imem does not have driver. [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/sources_1/new/imem.v:7]
-WARNING: [Synth 8-3848] Net mem in module/entity imem does not have driver. [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/sources_1/new/imem.v:7]
-WARNING: [Synth 8-3848] Net mem in module/entity imem does not have driver. [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/sources_1/new/imem.v:7]
-WARNING: [Synth 8-3848] Net mem in module/entity imem does not have driver. [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/sources_1/new/imem.v:7]
-WARNING: [Synth 8-3848] Net mem in module/entity imem does not have driver. [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/sources_1/new/imem.v:7]
-WARNING: [Synth 8-3848] Net mem in module/entity imem does not have driver. [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/sources_1/new/imem.v:7]
-WARNING: [Synth 8-3848] Net mem in module/entity imem does not have driver. [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/sources_1/new/imem.v:7]
-WARNING: [Synth 8-3848] Net mem in module/entity imem does not have driver. [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/sources_1/new/imem.v:7]
-WARNING: [Synth 8-3848] Net mem in module/entity imem does not have driver. [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/sources_1/new/imem.v:7]
-WARNING: [Synth 8-3848] Net mem in module/entity imem does not have driver. [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/sources_1/new/imem.v:7]
-WARNING: [Synth 8-3848] Net mem in module/entity imem does not have driver. [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/sources_1/new/imem.v:7]
-WARNING: [Synth 8-3848] Net mem in module/entity imem does not have driver. [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/sources_1/new/imem.v:7]
-WARNING: [Synth 8-3848] Net mem in module/entity imem does not have driver. [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/sources_1/new/imem.v:7]
-WARNING: [Synth 8-3848] Net mem in module/entity imem does not have driver. [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/sources_1/new/imem.v:7]
-WARNING: [Synth 8-3848] Net mem in module/entity imem does not have driver. [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/sources_1/new/imem.v:7]
-WARNING: [Synth 8-3848] Net mem in module/entity imem does not have driver. [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/sources_1/new/imem.v:7]
-WARNING: [Synth 8-3848] Net mem in module/entity imem does not have driver. [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/sources_1/new/imem.v:7]
-WARNING: [Synth 8-3848] Net mem in module/entity imem does not have driver. [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/sources_1/new/imem.v:7]
-WARNING: [Synth 8-3848] Net mem in module/entity imem does not have driver. [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/sources_1/new/imem.v:7]
-WARNING: [Synth 8-3848] Net mem in module/entity imem does not have driver. [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/sources_1/new/imem.v:7]
-WARNING: [Synth 8-3848] Net mem in module/entity imem does not have driver. [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/sources_1/new/imem.v:7]
-WARNING: [Synth 8-3848] Net mem in module/entity imem does not have driver. [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/sources_1/new/imem.v:7]
-WARNING: [Synth 8-3848] Net mem in module/entity imem does not have driver. [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/sources_1/new/imem.v:7]
-WARNING: [Synth 8-3848] Net mem in module/entity imem does not have driver. [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/sources_1/new/imem.v:7]
-WARNING: [Synth 8-3848] Net mem in module/entity imem does not have driver. [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/sources_1/new/imem.v:7]
+CRITICAL WARNING: [Synth 8-4445] could not open $readmem data file 'program.mem'; please make sure the file is added to project and has read permission, ignoring [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/sources_1/new/imem.v:17]
 INFO: [Synth 8-6155] done synthesizing module 'imem' (12#1) [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/sources_1/new/imem.v:3]
 INFO: [Synth 8-6155] done synthesizing module 'Top1' (13#1) [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/sources_1/new/Top1.v:3]
 WARNING: [Synth 8-3331] design imem has unconnected port a[31]
@@ -150,8 +79,6 @@ WARNING: [Synth 8-3331] design imem has unconnected port a[13]
 WARNING: [Synth 8-3331] design imem has unconnected port a[12]
 WARNING: [Synth 8-3331] design imem has unconnected port a[11]
 WARNING: [Synth 8-3331] design imem has unconnected port a[10]
-WARNING: [Synth 8-3331] design imem has unconnected port a[9]
-WARNING: [Synth 8-3331] design imem has unconnected port a[8]
 WARNING: [Synth 8-3331] design imem has unconnected port a[1]
 WARNING: [Synth 8-3331] design imem has unconnected port a[0]
 WARNING: [Synth 8-3331] design control_logic has unconnected port inst[24]
@@ -179,7 +106,7 @@ WARNING: [Synth 8-3331] design datapath has unconnected port Instr[2]
 WARNING: [Synth 8-3331] design datapath has unconnected port Instr[1]
 WARNING: [Synth 8-3331] design datapath has unconnected port Instr[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:00:27 . Memory (MB): peak = 596.348 ; gain = 264.070
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 596.148 ; gain = 264.668
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -192,10 +119,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:32 . Memory (MB): peak = 596.348 ; gain = 264.070
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 596.148 ; gain = 264.668
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:32 . Memory (MB): peak = 596.348 ; gain = 264.070
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 596.148 ; gain = 264.668
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -203,34 +130,33 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 Processing XDC Constraints
 Initializing timing engine
 Parsing XDC File [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/constrs_1/new/RISC_const.xdc]
-CRITICAL WARNING: [Common 17-165] Too many positional options when parsing 'MHz', please type 'create_clock -help' for usage info. [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/constrs_1/new/RISC_const.xdc:4]
 Finished Parsing XDC File [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/constrs_1/new/RISC_const.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/constrs_1/new/RISC_const.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top1_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/Top1_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 922.832 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 928.293 ; gain = 0.000
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 922.832 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 928.480 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.006 . Memory (MB): peak = 922.832 ; gain = 0.000
-Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.026 . Memory (MB): peak = 922.832 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 928.480 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 928.480 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:49 ; elapsed = 00:01:08 . Memory (MB): peak = 922.832 ; gain = 590.555
+Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 928.480 ; gain = 597.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:49 ; elapsed = 00:01:08 . Memory (MB): peak = 922.832 ; gain = 590.555
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 928.480 ; gain = 597.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:50 ; elapsed = 00:01:08 . Memory (MB): peak = 922.832 ; gain = 590.555
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 928.480 ; gain = 597.000
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "x_reg[31]" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "x_reg[30]" won't be mapped to RAM because it is too sparse
@@ -375,10 +301,11 @@ INFO: [Synth 8-5545] ROM "mem_reg[48]" won't be mapped to RAM because address si
 INFO: [Synth 8-5545] ROM "mem_reg[48]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "mem_reg[49]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Common 17-14] Message 'Synth 8-5545' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5546] ROM "mem" won't be mapped to RAM because it is too sparse
 WARNING: [Synth 8-327] inferring latch for variable 'ALUControl_reg' [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/sources_1/new/control_logic.v:52]
 WARNING: [Synth 8-327] inferring latch for variable 'dmemMode_reg' [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/sources_1/new/control_logic.v:44]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:27 ; elapsed = 00:01:47 . Memory (MB): peak = 922.832 ; gain = 590.555
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:11 ; elapsed = 00:01:16 . Memory (MB): peak = 928.480 ; gain = 597.000
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -389,7 +316,7 @@ Report RTL Partitions:
 |2     |dmem__GB1     |           1|     14775|
 |3     |dmem__GB2     |           1|     19073|
 |4     |dmem__GB3     |           1|     24920|
-|5     |Top1__GC0     |           1|      8108|
+|5     |Top1__GC0     |           1|      6188|
 +------+--------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -400,11 +327,13 @@ Detailed RTL Component Info :
 	   3 Input     32 Bit       Adders := 1     
 +---XORs : 
 	   2 Input     32 Bit         XORs := 1     
+	   4 Input     32 Bit         XORs := 1     
 +---Registers : 
 	               32 Bit    Registers := 33    
 +---Muxes : 
 	   2 Input     32 Bit        Muxes := 2     
 	   4 Input     32 Bit        Muxes := 2     
+	 257 Input     32 Bit        Muxes := 1     
 	   4 Input      8 Bit        Muxes := 144   
 	   2 Input      8 Bit        Muxes := 510   
 	   6 Input      8 Bit        Muxes := 256   
@@ -433,6 +362,10 @@ Finished RTL Component Statistics
 Start RTL Hierarchical Component Statistics 
 ---------------------------------------------------------------------------------
 Hierarchical RTL Component report 
+Module Top1 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input     32 Bit         XORs := 1     
 Module dmem 
 Detailed RTL Component Info : 
 +---Muxes : 
@@ -506,6 +439,10 @@ Detailed RTL Component Info :
 	   3 Input      1 Bit        Muxes := 2     
 	   6 Input      1 Bit        Muxes := 1     
 	   4 Input      1 Bit        Muxes := 1     
+Module imem 
+Detailed RTL Component Info : 
++---Muxes : 
+	 257 Input     32 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -522,13 +459,6 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-INFO: [Synth 8-5587] ROM size for "RV32I_Logic/Single_Cycle_Control/immSEL" is below threshold of ROM address width. It will be mapped to LUTs
-INFO: [Synth 8-5587] ROM size for "RV32I_Logic/Single_Cycle_Control/regSEL" is below threshold of ROM address width. It will be mapped to LUTs
-INFO: [Synth 8-5546] ROM "RV32I_Logic/Single_Cycle_Control/dmemWE" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5587] ROM size for "RV32I_Logic/Single_Cycle_Control/regWE" is below threshold of ROM address width. It will be mapped to LUTs
-INFO: [Synth 8-5546] ROM "RV32I_Logic/Single_Cycle_Control/rs1SEL" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5587] ROM size for "RV32I_Logic/Single_Cycle_Control/rs2SEL" is below threshold of ROM address width. It will be mapped to LUTs
-INFO: [Synth 8-5546] ROM "RV32I_Logic/Single_Cycle_Control/ALUControl" won't be mapped to RAM because it is too sparse
 CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'dataMemoryi_1/mem_reg[0][7]/Q' [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/sources_1/new/dmem.v:51]
 CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/sources_1/new/dmem.v:51]
 CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.srcs/sources_1/new/dmem.v:51]
@@ -763,8 +693,8 @@ INFO: [Synth 8-3886] merging instance 'i_0/RV32I_Logic/Single_Cycle_Datapath/reg
 INFO: [Synth 8-3886] merging instance 'i_0/RV32I_Logic/Single_Cycle_Datapath/regFILE/x_reg[3][0]' (FDCE) to 'i_0/RV32I_Logic/Single_Cycle_Datapath/regFILE/x_reg[2][0]'
 INFO: [Synth 8-3886] merging instance 'i_0/RV32I_Logic/Single_Cycle_Datapath/regFILE/x_reg[2][0]' (FDCE) to 'i_0/RV32I_Logic/Single_Cycle_Datapath/regFILE/x_reg[1][0]'
 INFO: [Synth 8-3886] merging instance 'i_0/RV32I_Logic/Single_Cycle_Datapath/regFILE/x_reg[1][0]' (FDCE) to 'i_0/RV32I_Logic/Single_Cycle_Datapath/regFILE/x_reg[0][0]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\RV32I_Logic/Single_Cycle_Datapath /\regFILE/x_reg[0][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\RV32I_Logic/Single_Cycle_Datapath /\pcREG/q_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\RV32I_Logic/Single_Cycle_Datapath/regFILE/x_reg[0][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\RV32I_Logic/Single_Cycle_Datapath/pcREG/q_reg[1] )
 INFO: [Synth 8-3886] merging instance 'i_0/RV32I_Logic/Single_Cycle_Datapath/regFILE/x_reg[31][1]' (FDCE) to 'i_0/RV32I_Logic/Single_Cycle_Datapath/regFILE/x_reg[30][1]'
 INFO: [Synth 8-3886] merging instance 'i_0/RV32I_Logic/Single_Cycle_Datapath/regFILE/x_reg[30][1]' (FDCE) to 'i_0/RV32I_Logic/Single_Cycle_Datapath/regFILE/x_reg[29][1]'
 INFO: [Synth 8-3886] merging instance 'i_0/RV32I_Logic/Single_Cycle_Datapath/regFILE/x_reg[29][1]' (FDCE) to 'i_0/RV32I_Logic/Single_Cycle_Datapath/regFILE/x_reg[28][1]'
@@ -796,7 +726,7 @@ INFO: [Synth 8-3886] merging instance 'i_0/RV32I_Logic/Single_Cycle_Datapath/reg
 INFO: [Synth 8-3886] merging instance 'i_0/RV32I_Logic/Single_Cycle_Datapath/regFILE/x_reg[3][1]' (FDCE) to 'i_0/RV32I_Logic/Single_Cycle_Datapath/regFILE/x_reg[2][1]'
 INFO: [Synth 8-3886] merging instance 'i_0/RV32I_Logic/Single_Cycle_Datapath/regFILE/x_reg[2][1]' (FDCE) to 'i_0/RV32I_Logic/Single_Cycle_Datapath/regFILE/x_reg[1][1]'
 INFO: [Synth 8-3886] merging instance 'i_0/RV32I_Logic/Single_Cycle_Datapath/regFILE/x_reg[1][1]' (FDCE) to 'i_0/RV32I_Logic/Single_Cycle_Datapath/regFILE/x_reg[0][1]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\RV32I_Logic/Single_Cycle_Datapath /\regFILE/x_reg[0][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\RV32I_Logic/Single_Cycle_Datapath/regFILE/x_reg[0][1] )
 INFO: [Synth 8-3886] merging instance 'i_0/RV32I_Logic/Single_Cycle_Datapath/regFILE/x_reg[31][2]' (FDCE) to 'i_0/RV32I_Logic/Single_Cycle_Datapath/regFILE/x_reg[30][2]'
 INFO: [Synth 8-3886] merging instance 'i_0/RV32I_Logic/Single_Cycle_Datapath/regFILE/x_reg[30][2]' (FDCE) to 'i_0/RV32I_Logic/Single_Cycle_Datapath/regFILE/x_reg[29][2]'
 INFO: [Synth 8-3886] merging instance 'i_0/RV32I_Logic/Single_Cycle_Datapath/regFILE/x_reg[29][2]' (FDCE) to 'i_0/RV32I_Logic/Single_Cycle_Datapath/regFILE/x_reg[28][2]'
@@ -828,7 +758,7 @@ INFO: [Synth 8-3886] merging instance 'i_0/RV32I_Logic/Single_Cycle_Datapath/reg
 INFO: [Synth 8-3886] merging instance 'i_0/RV32I_Logic/Single_Cycle_Datapath/regFILE/x_reg[3][2]' (FDCE) to 'i_0/RV32I_Logic/Single_Cycle_Datapath/regFILE/x_reg[2][2]'
 INFO: [Synth 8-3886] merging instance 'i_0/RV32I_Logic/Single_Cycle_Datapath/regFILE/x_reg[2][2]' (FDCE) to 'i_0/RV32I_Logic/Single_Cycle_Datapath/regFILE/x_reg[1][2]'
 INFO: [Synth 8-3886] merging instance 'i_0/RV32I_Logic/Single_Cycle_Datapath/regFILE/x_reg[1][2]' (FDCE) to 'i_0/RV32I_Logic/Single_Cycle_Datapath/regFILE/x_reg[0][2]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\RV32I_Logic/Single_Cycle_Datapath /\regFILE/x_reg[0][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\RV32I_Logic/Single_Cycle_Datapath/regFILE/x_reg[0][2] )
 INFO: [Synth 8-3886] merging instance 'i_0/RV32I_Logic/Single_Cycle_Datapath/regFILE/x_reg[31][3]' (FDCE) to 'i_0/RV32I_Logic/Single_Cycle_Datapath/regFILE/x_reg[30][3]'
 INFO: [Synth 8-3886] merging instance 'i_0/RV32I_Logic/Single_Cycle_Datapath/regFILE/x_reg[30][3]' (FDCE) to 'i_0/RV32I_Logic/Single_Cycle_Datapath/regFILE/x_reg[29][3]'
 INFO: [Synth 8-3886] merging instance 'i_0/RV32I_Logic/Single_Cycle_Datapath/regFILE/x_reg[29][3]' (FDCE) to 'i_0/RV32I_Logic/Single_Cycle_Datapath/regFILE/x_reg[28][3]'
@@ -837,73 +767,76 @@ INFO: [Synth 8-3886] merging instance 'i_0/RV32I_Logic/Single_Cycle_Datapath/reg
 INFO: [Synth 8-3886] merging instance 'i_0/RV32I_Logic/Single_Cycle_Datapath/regFILE/x_reg[26][3]' (FDCE) to 'i_0/RV32I_Logic/Single_Cycle_Datapath/regFILE/x_reg[25][3]'
 INFO: [Synth 8-3886] merging instance 'i_0/RV32I_Logic/Single_Cycle_Datapath/regFILE/x_reg[25][3]' (FDCE) to 'i_0/RV32I_Logic/Single_Cycle_Datapath/regFILE/x_reg[24][3]'
 INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\RV32I_Logic/Single_Cycle_Datapath /\regFILE/x_reg[0][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\RV32I_Logic/Single_Cycle_Datapath /\regFILE/x_reg[0][4] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\RV32I_Logic/Single_Cycle_Datapath /\regFILE/x_reg[0][5] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\RV32I_Logic/Single_Cycle_Datapath /\regFILE/x_reg[0][6] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\RV32I_Logic/Single_Cycle_Datapath /\regFILE/x_reg[0][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\RV32I_Logic/Single_Cycle_Datapath /\regFILE/x_reg[0][8] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\RV32I_Logic/Single_Cycle_Datapath /\regFILE/x_reg[0][9] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\RV32I_Logic/Single_Cycle_Datapath /\regFILE/x_reg[0][10] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\RV32I_Logic/Single_Cycle_Datapath /\regFILE/x_reg[0][11] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\RV32I_Logic/Single_Cycle_Datapath /\regFILE/x_reg[0][12] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\RV32I_Logic/Single_Cycle_Datapath /\regFILE/x_reg[0][13] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\RV32I_Logic/Single_Cycle_Datapath /\regFILE/x_reg[0][14] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\RV32I_Logic/Single_Cycle_Datapath /\regFILE/x_reg[0][15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\RV32I_Logic/Single_Cycle_Datapath /\regFILE/x_reg[0][16] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\RV32I_Logic/Single_Cycle_Datapath /\regFILE/x_reg[0][17] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\RV32I_Logic/Single_Cycle_Datapath /\regFILE/x_reg[0][18] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\RV32I_Logic/Single_Cycle_Datapath /\regFILE/x_reg[0][19] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\RV32I_Logic/Single_Cycle_Datapath /\regFILE/x_reg[0][20] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\RV32I_Logic/Single_Cycle_Datapath /\regFILE/x_reg[0][21] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\RV32I_Logic/Single_Cycle_Datapath /\regFILE/x_reg[0][22] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\RV32I_Logic/Single_Cycle_Datapath /\regFILE/x_reg[0][23] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\RV32I_Logic/Single_Cycle_Datapath /\regFILE/x_reg[0][24] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\RV32I_Logic/Single_Cycle_Datapath /\regFILE/x_reg[0][25] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\RV32I_Logic/Single_Cycle_Datapath /\regFILE/x_reg[0][26] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\RV32I_Logic/Single_Cycle_Datapath /\regFILE/x_reg[0][27] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\RV32I_Logic/Single_Cycle_Datapath /\regFILE/x_reg[0][28] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\RV32I_Logic/Single_Cycle_Datapath /\regFILE/x_reg[0][29] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\RV32I_Logic/Single_Cycle_Datapath /\regFILE/x_reg[0][30] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\RV32I_Logic/Single_Cycle_Datapath /\regFILE/x_reg[0][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\RV32I_Logic/Single_Cycle_Datapath/regFILE/x_reg[0][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\RV32I_Logic/Single_Cycle_Datapath/regFILE/x_reg[0][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\RV32I_Logic/Single_Cycle_Datapath/regFILE/x_reg[0][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\RV32I_Logic/Single_Cycle_Datapath/regFILE/x_reg[0][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\RV32I_Logic/Single_Cycle_Datapath/regFILE/x_reg[0][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\RV32I_Logic/Single_Cycle_Datapath/regFILE/x_reg[0][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\RV32I_Logic/Single_Cycle_Datapath/regFILE/x_reg[0][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\RV32I_Logic/Single_Cycle_Datapath/regFILE/x_reg[0][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\RV32I_Logic/Single_Cycle_Datapath/regFILE/x_reg[0][11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\RV32I_Logic/Single_Cycle_Datapath/regFILE/x_reg[0][12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\RV32I_Logic/Single_Cycle_Datapath/regFILE/x_reg[0][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\RV32I_Logic/Single_Cycle_Datapath/regFILE/x_reg[0][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\RV32I_Logic/Single_Cycle_Datapath/regFILE/x_reg[0][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\RV32I_Logic/Single_Cycle_Datapath/regFILE/x_reg[0][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\RV32I_Logic/Single_Cycle_Datapath/regFILE/x_reg[0][17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\RV32I_Logic/Single_Cycle_Datapath/regFILE/x_reg[0][18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\RV32I_Logic/Single_Cycle_Datapath/regFILE/x_reg[0][19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\RV32I_Logic/Single_Cycle_Datapath/regFILE/x_reg[0][20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\RV32I_Logic/Single_Cycle_Datapath/regFILE/x_reg[0][21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\RV32I_Logic/Single_Cycle_Datapath/regFILE/x_reg[0][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\RV32I_Logic/Single_Cycle_Datapath/regFILE/x_reg[0][23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\RV32I_Logic/Single_Cycle_Datapath/regFILE/x_reg[0][24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\RV32I_Logic/Single_Cycle_Datapath/regFILE/x_reg[0][25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\RV32I_Logic/Single_Cycle_Datapath/regFILE/x_reg[0][26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\RV32I_Logic/Single_Cycle_Datapath/regFILE/x_reg[0][27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\RV32I_Logic/Single_Cycle_Datapath/regFILE/x_reg[0][28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\RV32I_Logic/Single_Cycle_Datapath/regFILE/x_reg[0][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\RV32I_Logic/Single_Cycle_Datapath/regFILE/x_reg[0][30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\RV32I_Logic/Single_Cycle_Datapath/regFILE/x_reg[0][31] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\RV32I_Logic/Single_Cycle_Control/ALUControl_reg[0] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\RV32I_Logic/Single_Cycle_Control/ALUControl_reg[2] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\RV32I_Logic/Single_Cycle_Control/ALUControl_reg[3] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\RV32I_Logic/Single_Cycle_Control/dmemMode_reg[0] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\RV32I_Logic/Single_Cycle_Control/dmemMode_reg[1] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\RV32I_Logic/Single_Cycle_Control/dmemMode_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\RV32I_Logic/Single_Cycle_Datapath/pcREG/q_reg[0] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:53 ; elapsed = 00:02:17 . Memory (MB): peak = 922.832 ; gain = 590.555
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:40 ; elapsed = 00:01:48 . Memory (MB): peak = 928.480 ; gain = 597.000
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |Top1__GC0     |           1|        40|
++------+--------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:03 ; elapsed = 00:02:27 . Memory (MB): peak = 922.832 ; gain = 590.555
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:52 ; elapsed = 00:01:59 . Memory (MB): peak = 928.480 ; gain = 597.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:02:03 ; elapsed = 00:02:27 . Memory (MB): peak = 922.832 ; gain = 590.555
+Finished Timing Optimization : Time (s): cpu = 00:01:52 ; elapsed = 00:01:59 . Memory (MB): peak = 928.480 ; gain = 597.000
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |Top1__GC0     |           1|        40|
++------+--------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:02:03 ; elapsed = 00:02:27 . Memory (MB): peak = 922.832 ; gain = 590.555
+Finished Technology Mapping : Time (s): cpu = 00:01:52 ; elapsed = 00:01:59 . Memory (MB): peak = 928.480 ; gain = 597.000
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -927,7 +860,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:02:04 ; elapsed = 00:02:28 . Memory (MB): peak = 922.832 ; gain = 590.555
+Finished IO Insertion : Time (s): cpu = 00:01:53 ; elapsed = 00:02:00 . Memory (MB): peak = 928.480 ; gain = 597.000
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -940,7 +873,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:02:04 ; elapsed = 00:02:28 . Memory (MB): peak = 922.832 ; gain = 590.555
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:53 ; elapsed = 00:02:00 . Memory (MB): peak = 928.480 ; gain = 597.000
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -952,25 +885,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:04 ; elapsed = 00:02:28 . Memory (MB): peak = 922.832 ; gain = 590.555
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:53 ; elapsed = 00:02:00 . Memory (MB): peak = 928.480 ; gain = 597.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:02:04 ; elapsed = 00:02:28 . Memory (MB): peak = 922.832 ; gain = 590.555
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:53 ; elapsed = 00:02:00 . Memory (MB): peak = 928.480 ; gain = 597.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:02:04 ; elapsed = 00:02:28 . Memory (MB): peak = 922.832 ; gain = 590.555
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:53 ; elapsed = 00:02:00 . Memory (MB): peak = 928.480 ; gain = 597.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:02:04 ; elapsed = 00:02:28 . Memory (MB): peak = 922.832 ; gain = 590.555
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:53 ; elapsed = 00:02:00 . Memory (MB): peak = 928.480 ; gain = 597.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -983,37 +916,49 @@ Report BlackBoxes:
 +-+--------------+----------+
 
 Report Cell Usage: 
-+-+-----+------+
-| |Cell |Count |
-+-+-----+------+
-+-+-----+------+
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     8|
+|3     |LUT1   |     2|
+|4     |FDCE   |    30|
+|5     |IBUF   |     2|
+|6     |OBUF   |    32|
++------+-------+------+
 
 Report Instance Areas: 
-+------+---------+-------+------+
-|      |Instance |Module |Cells |
-+------+---------+-------+------+
-|1     |top      |       |     0|
-+------+---------+-------+------+
++------+--------------------------+-------------------+------+
+|      |Instance                  |Module             |Cells |
++------+--------------------------+-------------------+------+
+|1     |top                       |                   |    75|
+|2     |  RV32I_Logic             |Single_Cycle_RV32I |    40|
+|3     |    Single_Cycle_Datapath |datapath           |    40|
+|4     |      pcREG               |flopr              |    32|
+|5     |      plus4               |adder              |     8|
++------+--------------------------+-------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:02:04 ; elapsed = 00:02:28 . Memory (MB): peak = 922.832 ; gain = 590.555
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:53 ; elapsed = 00:02:00 . Memory (MB): peak = 928.480 ; gain = 597.000
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 6144 critical warnings and 2 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:20 ; elapsed = 00:01:59 . Memory (MB): peak = 922.832 ; gain = 264.070
-Synthesis Optimization Complete : Time (s): cpu = 00:02:04 ; elapsed = 00:02:28 . Memory (MB): peak = 922.832 ; gain = 590.555
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:33 ; elapsed = 00:01:49 . Memory (MB): peak = 928.480 ; gain = 264.668
+Synthesis Optimization Complete : Time (s): cpu = 00:01:53 ; elapsed = 00:02:01 . Memory (MB): peak = 928.480 ; gain = 597.000
 INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 922.832 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 928.480 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-336 Infos, 116 Warnings, 202 Critical Warnings and 0 Errors encountered.
+333 Infos, 50 Warnings, 201 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:02:06 ; elapsed = 00:02:32 . Memory (MB): peak = 922.832 ; gain = 603.578
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 922.832 ; gain = 0.000
+synth_design: Time (s): cpu = 00:01:54 ; elapsed = 00:02:03 . Memory (MB): peak = 928.480 ; gain = 610.043
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 928.480 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'D:/RTL_Design/RISC_V_Processor_32_bit/RISC_V_Processor_32_bit.runs/synth_1/Top1.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Top1_utilization_synth.rpt -pb Top1_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Mar 20 11:30:40 2026...
+INFO: [Common 17-206] Exiting Vivado at Sat Mar 21 23:33:29 2026...
