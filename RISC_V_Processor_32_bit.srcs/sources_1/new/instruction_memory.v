@@ -7,7 +7,7 @@ module instruction_memory (
     reg [31:0] mem [0:255];   // 256 instructions
 
     initial begin
-        $readmemh("prog.mem", mem); // hex file
+        $readmemh("program.hex", mem); // hex file
     end
 
     assign instr = mem[addr[9:2]];  // word aligned

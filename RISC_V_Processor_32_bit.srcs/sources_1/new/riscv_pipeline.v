@@ -123,7 +123,7 @@ module riscv_pipeline (
     // ------------------------------
 
     assign wb_data = (MEMWB_MemToReg) ? MEMWB_mem : MEMWB_alu;
-    wire RegWrite_WB = MEMWB_RegWrite;
-    wire [4:0] rd_WB  = MEMWB_rd;
+//    wire RegWrite_WB = MEMWB_RegWrite;
+//    wire [4:0] rd_WB  = MEMWB_rd;
 
 endmodule
